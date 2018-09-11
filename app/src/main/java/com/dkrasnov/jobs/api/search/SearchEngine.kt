@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 class SearchEngine @Inject constructor(private val searchApi: SearchApi) {
 
-    private val DEBOUNCE_INTERVAL_MILLISECONDS = 500L
+    private val DEBOUNCE_INTERVAL_MILLISECONDS = 200L
 
     val vocationsObservable = PublishSubject.create<Resource<MutableList<Vocation>>>()
 
